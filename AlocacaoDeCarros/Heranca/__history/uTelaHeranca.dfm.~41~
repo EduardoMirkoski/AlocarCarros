@@ -1,0 +1,296 @@
+object TelaHeranca: TTelaHeranca
+  Left = 0
+  Top = 0
+  BorderStyle = bsDialog
+  Caption = 'Tela Heranca'
+  ClientHeight = 277
+  ClientWidth = 949
+  Color = clBtnFace
+  Font.Charset = ANSI_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -13
+  Font.Name = 'Arial'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  PixelsPerInch = 96
+  TextHeight = 16
+  object pnlRodape: TPanel
+    Left = 0
+    Top = 236
+    Width = 949
+    Height = 41
+    Align = alBottom
+    TabOrder = 0
+    ExplicitLeft = 1
+    ExplicitTop = 242
+    object pnlListagem: TPanel
+      Left = 858
+      Top = 1
+      Width = 90
+      Height = 39
+      Align = alRight
+      ParentBackground = False
+      TabOrder = 0
+      ExplicitLeft = 9
+      ExplicitTop = 2
+      object btnListagem: TSpeedButton
+        Left = 1
+        Top = 1
+        Width = 88
+        Height = 37
+        Align = alClient
+        Caption = 'Listagem'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        ExplicitLeft = -3
+        ExplicitTop = -3
+        ExplicitWidth = 106
+        ExplicitHeight = 41
+      end
+    end
+    object pnlVoltar: TPanel
+      Left = 1
+      Top = 1
+      Width = 90
+      Height = 39
+      Align = alLeft
+      ParentBackground = False
+      TabOrder = 1
+      ExplicitLeft = 9
+      ExplicitTop = 2
+      object btnVoltar: TSpeedButton
+        Left = 1
+        Top = 1
+        Width = 88
+        Height = 37
+        Align = alClient
+        Caption = 'Voltar'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        ExplicitLeft = -3
+        ExplicitTop = -3
+        ExplicitWidth = 106
+        ExplicitHeight = 41
+      end
+    end
+  end
+  object pnlTitulo: TPanel
+    Left = 0
+    Top = 0
+    Width = 949
+    Height = 41
+    Align = alTop
+    TabOrder = 1
+    ExplicitTop = -4
+    ExplicitWidth = 871
+  end
+  object pnlBotoes: TPanel
+    Left = 0
+    Top = 41
+    Width = 949
+    Height = 39
+    Align = alTop
+    TabOrder = 2
+    ExplicitLeft = 8
+    ExplicitTop = 35
+    object pnlNovo: TPanel
+      Left = 1
+      Top = 1
+      Width = 90
+      Height = 37
+      Align = alLeft
+      ParentBackground = False
+      TabOrder = 0
+      object btnNovo: TSpeedButton
+        Left = 1
+        Top = 1
+        Width = 88
+        Height = 35
+        Align = alClient
+        Caption = 'Novo'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        Glyph.Data = {
+          42040000424D4204000000000000420000002800000010000000100000000100
+          20000300000000040000760000007600000000000000000000000000FF0000FF
+          0000FF0000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000000000000000000000000000000000000000000000000000A354
+          003DA35500C0984F00EE864600F1844200BC0000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000A2530037A355
+          00FCA35500FFE1B484FFA35500FF844300FF844300C300000000000000000000
+          0000000000000000000066C0FF5565C1FF7765C1FF7765C1FF7799682AD6A355
+          00FFA35500FFF3CFA9FFA35500FF9C5200FF814300FF65C1FF7765C1FF7756BB
+          FF8046B6FF4900FFFF015CBEFEFB65C1FEFF65C1FEFF65C1FEFF9A6424FFDBAB
+          78FFF1CCA6FFFDDFC0FFF1CCA6FFE5BB8EFF814200FF68B8EFFF65C1FEFF5ABE
+          FDFF3EB3FEE5009EFF1559BDFEFF65C1FEFF65C1FEFF65C1FEFF917449FFA355
+          00FFA35500FFF3CFA9FFA35500FF9F5200FF814200FF65C1FEFF65C1FEFF5CBD
+          FEFF3FB3FDE70097FF3155BBFEFF65C1FEFF65C1FEFF65C1FEFF73A8C4FFA356
+          02FFA35500FFE3B788FFA35500FF844400FF7D5D33FF65C1FEFF65C1FEFF5EBE
+          FEFF41B3FDE7009AFF4E52B9FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF76A3
+          B8FF966B35FF965108FF854B0CFF7F5E35FF65C1FEFF65C1FEFF65C1FEFF5EBF
+          FEFF42B4FDE80099FF6B4EB8FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1
+          FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF60BF
+          FEFF42B4FDEA029AFD884AB6FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1
+          FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF61C0
+          FEFF42B4FDEE0299FDA547B5FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1
+          FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF63C0
+          FEFF42B5FDF40199FEC143B4FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1
+          FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF63C0
+          FEFF41B5FDFA0199FEDE3FB2FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF64C1
+          FEFF5EBFFEFF5EBEFEFF5EBEFEFF5EBEFEFF5EBEFEFF5EBEFEFF5EBEFEFF5ABE
+          FEF643B5FDDE0199FEF33CB1FEFF65C1FEFF65C1FEFF65C1FEFF65C1FEFF46B6
+          FDFF1BA3FEFF0199FEFF0199FEFF0199FEFF0199FEFF0199FEFF0199FEFF009A
+          FF7E000000000095FF1858BAFF8664C0FEF064C0FEF064C0FEF05ABDFEE942B5
+          FEF00096FF220096FF220096FF220096FF220096FF220096FF220096FF22009F
+          FF08000000000000000000000000000000000000000000000000000000000000
+          0000000000000000000000000000000000000000000000000000000000000000
+          000000000000}
+        ParentFont = False
+        ExplicitLeft = -3
+        ExplicitTop = -3
+      end
+    end
+    object pnlSalvar: TPanel
+      Left = 91
+      Top = 1
+      Width = 90
+      Height = 37
+      Align = alLeft
+      ParentBackground = False
+      TabOrder = 1
+      object btnSalvar: TSpeedButton
+        Left = 1
+        Top = 1
+        Width = 88
+        Height = 35
+        Align = alClient
+        Caption = 'Salvar'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        ExplicitLeft = -3
+        ExplicitTop = -3
+        ExplicitWidth = 106
+        ExplicitHeight = 41
+      end
+    end
+    object pnlCancelar: TPanel
+      Left = 181
+      Top = 1
+      Width = 90
+      Height = 37
+      Align = alLeft
+      ParentBackground = False
+      TabOrder = 2
+      ExplicitLeft = 217
+      object btnCancelar: TSpeedButton
+        Left = 1
+        Top = 1
+        Width = 88
+        Height = 35
+        Align = alClient
+        Caption = 'Cancelar'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        ExplicitLeft = 26
+        ExplicitTop = -3
+        ExplicitWidth = 106
+      end
+    end
+    object pnlDeletar: TPanel
+      Left = 271
+      Top = 1
+      Width = 90
+      Height = 37
+      Align = alLeft
+      ParentBackground = False
+      TabOrder = 3
+      ExplicitLeft = 343
+      ExplicitTop = -4
+      object btnDeletar: TSpeedButton
+        Left = 1
+        Top = 1
+        Width = 88
+        Height = 35
+        Align = alClient
+        Caption = 'Deletar'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        ExplicitLeft = -3
+        ExplicitTop = -3
+        ExplicitWidth = 106
+        ExplicitHeight = 41
+      end
+    end
+    object pnlInformacoes: TPanel
+      Left = 858
+      Top = 1
+      Width = 90
+      Height = 37
+      Align = alRight
+      ParentBackground = False
+      TabOrder = 4
+      ExplicitLeft = 456
+      ExplicitTop = -4
+      object btnInformacoes: TSpeedButton
+        Left = 1
+        Top = 1
+        Width = 88
+        Height = 35
+        Align = alClient
+        Caption = 'Informacoes'
+        Flat = True
+        Font.Charset = ANSI_CHARSET
+        Font.Color = clBlack
+        Font.Height = -13
+        Font.Name = 'Arial'
+        Font.Style = []
+        ParentFont = False
+        ExplicitLeft = 24
+        ExplicitTop = 5
+      end
+    end
+  end
+  object pnlPrincipal: TPanel
+    Left = 0
+    Top = 80
+    Width = 949
+    Height = 156
+    Align = alClient
+    TabOrder = 3
+    ExplicitLeft = -69
+    ExplicitTop = -197
+    ExplicitWidth = 940
+    ExplicitHeight = 490
+  end
+end

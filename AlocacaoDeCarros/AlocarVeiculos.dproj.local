@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/10/07 09:31:39.634,=C:\Users\Bsoft\Documents\Embarcadero\Studio\Projects\Unit15.pas</Transaction>
+    <Transaction>2022/10/07 09:32:12.193,C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Uprincipal.pas=C:\Users\Bsoft\Documents\Embarcadero\Studio\Projects\Unit15.pas</Transaction>
+    <Transaction>2022/10/07 09:32:12.193,C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Uprincipal.dfm=C:\Users\Bsoft\Documents\Embarcadero\Studio\Projects\Unit15.dfm</Transaction>
+    <Transaction>2022/10/07 09:32:21.308,C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\AlocarVeiculos.dproj=C:\Users\Bsoft\Documents\Embarcadero\Studio\Projects\Project13.dproj</Transaction>
+    <Transaction>2022/10/07 09:32:58.108,=C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 09:33:25.912,C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Heranca\uTelaHeranca.dfm=C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Unit1.dfm</Transaction>
+    <Transaction>2022/10/07 09:33:25.912,C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Heranca\uTelaHeranca.pas=C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 10:07:56.118,=C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 10:09:04.453,C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Cadastros\uCadUsuario.pas=C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 10:09:04.453,C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Cadastros\uCadUsuario.dfm=C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Unit1.dfm</Transaction>
+    <Transaction>2022/10/07 10:28:39.558,=C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 10:29:08.769,C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\DataModule\uConexaoPrincipal.pas=C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 10:29:08.769,C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\DataModule\uConexaoPrincipal.dfm=C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Unit1.dfm</Transaction>
+    <Transaction>2022/10/07 12:29:03.324,=C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 12:29:22.413,=C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Unit1.pas</Transaction>
+    <Transaction>2022/10/07 12:31:07.720,C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Cadastros\uCadUsuario.pas=</Transaction>
+    <Transaction>2022/10/07 12:31:37.984,C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Cadastros\uCadUsuarios.dfm=C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Unit1.dfm</Transaction>
+    <Transaction>2022/10/07 12:31:37.984,C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Cadastros\uCadUsuarios.pas=C:\Users\Bsoft\Desktop\Estudos\Delphi\AlocacaoDeCarros\Unit1.pas</Transaction>
+  </Transactions>
+</BorlandProject>

@@ -1,0 +1,20 @@
+program AlocarVeiculos;
+
+uses
+  Vcl.Forms,
+  Uprincipal in 'Uprincipal.pas' {Form15},
+  uTelaHeranca in 'Heranca\uTelaHeranca.pas' {TelaHeranca},
+  uCadUsuario in 'Cadastros\uCadUsuario.pas' {uCadCadastroUsuario},
+  uConexaoPrincipal in 'DataModule\uConexaoPrincipal.pas' {DataModule1: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm15, Form15);
+  Application.CreateForm(TTelaHeranca, TelaHeranca);
+  Application.CreateForm(TuCadCadastroUsuario, uCadCadastroUsuario);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.Run;
+end.

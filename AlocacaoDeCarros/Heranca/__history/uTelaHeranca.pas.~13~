@@ -1,0 +1,42 @@
+unit uTelaHeranca;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.ComCtrls, Vcl.Buttons;
+
+type
+  TTelaHeranca = class(TForm)
+    pnlMenuLateral: TPanel;
+    pnlCabecalho: TPanel;
+    pgcCadastro: TPageControl;
+    tsCadastro: TTabSheet;
+    tsListagem: TTabSheet;
+    pnlRodape: TPanel;
+    pnlSalvar: TPanel;
+    pnlNovo: TPanel;
+    pnlCancelar: TPanel;
+    pnlDeletar: TPanel;
+    pnlCadastros: TPanel;
+    btnNovo: TSpeedButton;
+    btnSalvar: TSpeedButton;
+    btnCancelar: TSpeedButton;
+    btnDeletar: TSpeedButton;
+    pnlListagem: TPanel;
+    btnListagem: TSpeedButton;
+    pnlLatera: TPanel;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  TelaHeranca: TTelaHeranca;
+
+implementation
+
+{$R *.dfm}
+
+end.

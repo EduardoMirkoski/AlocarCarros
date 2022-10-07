@@ -1,0 +1,16 @@
+program AlocarVeiculos;
+
+uses
+  Vcl.Forms,
+  Uprincipal in 'Uprincipal.pas' {Form15},
+  uTelaHeranca in 'Heranca\uTelaHeranca.pas' {TelaHeranca};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm15, Form15);
+  Application.CreateForm(TTelaHeranca, TelaHeranca);
+  Application.Run;
+end.

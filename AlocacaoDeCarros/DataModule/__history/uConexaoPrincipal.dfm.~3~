@@ -1,0 +1,19 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 479
+  Width = 774
+  object tzConexaoPrincipal: TZConnection
+    ControlsCodePage = cCP_UTF16
+    Catalog = ''
+    Properties.Strings = (
+      'controls_cp=CP_UTF16')
+    HostName = 'localhost'
+    Port = 3306
+    Database = 'vendasveiculos'
+    User = 'Usuario'
+    Password = 'root'
+    Protocol = 'mysql'
+    Left = 122
+    Top = 75
+  end
+end
