@@ -17,34 +17,33 @@ object TelaHeranca: TTelaHeranca
   TextHeight = 16
   object pnlRodape: TPanel
     Left = 0
-    Top = 227
+    Top = 222
     Width = 648
-    Height = 28
+    Height = 33
     Align = alBottom
     TabOrder = 0
     object pnlListagem: TPanel
-      Left = 571
+      Left = 557
       Top = 1
-      Width = 76
-      Height = 26
+      Width = 90
+      Height = 31
       Align = alRight
       Color = cl3DLight
       ParentBackground = False
       TabOrder = 0
-      ExplicitHeight = 31
       object btnListagem: TSpeedButton
         Left = 1
         Top = 1
-        Width = 74
-        Height = 24
+        Width = 88
+        Height = 29
         Align = alClient
-        Caption = 'Listagem'
+        Caption = 'Dados'
         Flat = True
         Font.Charset = ANSI_CHARSET
         Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Arial'
-        Font.Style = []
+        Font.Style = [fsBold]
         Glyph.Data = {
           42040000424D4204000000000000420000002800000010000000100000000100
           20000300000000040000760000007600000000000000000000000000FF0000FF
@@ -91,18 +90,17 @@ object TelaHeranca: TTelaHeranca
     object pnlVoltar: TPanel
       Left = 1
       Top = 1
-      Width = 76
-      Height = 26
+      Width = 90
+      Height = 31
       Align = alLeft
       Color = cl3DLight
       ParentBackground = False
       TabOrder = 1
-      ExplicitHeight = 31
       object btnVoltar: TSpeedButton
         Left = 1
         Top = 1
-        Width = 74
-        Height = 24
+        Width = 88
+        Height = 29
         Align = alClient
         Caption = 'Voltar'
         Flat = True
@@ -110,7 +108,7 @@ object TelaHeranca: TTelaHeranca
         Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Arial'
-        Font.Style = []
+        Font.Style = [fsBold]
         Glyph.Data = {
           42040000424D4204000000000000420000002800000010000000100000000100
           20000300000000040000760000007600000000000000000000000000FF0000FF
@@ -150,7 +148,6 @@ object TelaHeranca: TTelaHeranca
         ParentFont = False
         ExplicitLeft = 2
         ExplicitTop = 5
-        ExplicitWidth = 88
         ExplicitHeight = 37
       end
     end
@@ -167,24 +164,23 @@ object TelaHeranca: TTelaHeranca
     Left = 0
     Top = 33
     Width = 648
-    Height = 28
+    Height = 33
     Align = alTop
     TabOrder = 2
     object pnlNovo: TPanel
       Left = 1
       Top = 1
-      Width = 76
-      Height = 26
+      Width = 90
+      Height = 31
       Align = alLeft
       Color = cl3DLight
       ParentBackground = False
       TabOrder = 0
-      ExplicitHeight = 31
       object btnNovo: TSpeedButton
         Left = 1
         Top = 1
-        Width = 74
-        Height = 24
+        Width = 88
+        Height = 29
         Align = alClient
         Caption = 'Novo'
         Flat = True
@@ -192,7 +188,7 @@ object TelaHeranca: TTelaHeranca
         Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Arial'
-        Font.Style = []
+        Font.Style = [fsBold]
         Glyph.Data = {
           42040000424D4204000000000000420000002800000010000000100000000100
           20000300000000040000760000007600000000000000000000000000FF0000FF
@@ -232,25 +228,23 @@ object TelaHeranca: TTelaHeranca
         ParentFont = False
         ExplicitLeft = -3
         ExplicitTop = -3
-        ExplicitWidth = 88
         ExplicitHeight = 35
       end
     end
     object pnlSalvar: TPanel
-      Left = 77
+      Left = 91
       Top = 1
-      Width = 76
-      Height = 26
+      Width = 90
+      Height = 31
       Align = alLeft
       Color = cl3DLight
       ParentBackground = False
       TabOrder = 1
-      ExplicitHeight = 31
       object btnSalvar: TSpeedButton
         Left = 1
         Top = 1
-        Width = 74
-        Height = 24
+        Width = 88
+        Height = 29
         Align = alClient
         Caption = 'Salvar'
         Flat = True
@@ -258,7 +252,7 @@ object TelaHeranca: TTelaHeranca
         Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Arial'
-        Font.Style = []
+        Font.Style = [fsBold]
         Glyph.Data = {
           42040000424D4204000000000000420000002800000010000000100000000100
           200003000000000400006F0000006F00000000000000000000000000FF0000FF
@@ -303,21 +297,20 @@ object TelaHeranca: TTelaHeranca
       end
     end
     object pnlCancelar: TPanel
-      Left = 153
+      Left = 181
       Top = 1
-      Width = 76
-      Height = 26
+      Width = 90
+      Height = 31
       Align = alLeft
       Color = cl3DLight
       ParentBackground = False
       TabOrder = 2
-      ExplicitLeft = 181
-      ExplicitHeight = 31
+      ExplicitLeft = 153
       object btnCancelar: TSpeedButton
         Left = 1
         Top = 1
-        Width = 74
-        Height = 24
+        Width = 88
+        Height = 29
         Align = alClient
         Caption = 'Cancelar'
         Flat = True
@@ -325,7 +318,7 @@ object TelaHeranca: TTelaHeranca
         Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Arial'
-        Font.Style = []
+        Font.Style = [fsBold]
         Glyph.Data = {
           42040000424D4204000000000000420000002800000010000000100000000100
           200003000000000400006F0000006F00000000000000000000000000FF0000FF
@@ -370,21 +363,20 @@ object TelaHeranca: TTelaHeranca
       end
     end
     object pnlDeletar: TPanel
-      Left = 229
+      Left = 271
       Top = 1
-      Width = 76
-      Height = 26
+      Width = 90
+      Height = 31
       Align = alLeft
       Color = cl3DLight
       ParentBackground = False
       TabOrder = 3
-      ExplicitLeft = 257
-      ExplicitHeight = 31
+      ExplicitLeft = 243
       object btnDeletar: TSpeedButton
         Left = 1
         Top = 1
-        Width = 74
-        Height = 24
+        Width = 88
+        Height = 29
         Align = alClient
         Caption = 'Deletar'
         Flat = True
@@ -392,7 +384,7 @@ object TelaHeranca: TTelaHeranca
         Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Arial'
-        Font.Style = []
+        Font.Style = [fsBold]
         Glyph.Data = {
           42040000424D4204000000000000420000002800000010000000100000000100
           20000300000000040000760000007600000000000000000000000000FF0000FF
@@ -430,26 +422,25 @@ object TelaHeranca: TTelaHeranca
           3F896B5C40A4705C3D1900000000000000000000000000000000000000000000
           000000000000}
         ParentFont = False
-        ExplicitLeft = 5
+        ExplicitLeft = -3
         ExplicitTop = -3
-        ExplicitHeight = 29
+        ExplicitWidth = 74
       end
     end
     object pnlInformacoes: TPanel
-      Left = 571
+      Left = 557
       Top = 1
-      Width = 76
-      Height = 26
+      Width = 90
+      Height = 31
       Align = alRight
       Color = cl3DLight
       ParentBackground = False
       TabOrder = 4
-      ExplicitHeight = 31
       object btnInformacoes: TSpeedButton
         Left = 1
         Top = 1
-        Width = 74
-        Height = 24
+        Width = 88
+        Height = 29
         Align = alClient
         Caption = 'Info'
         Flat = True
@@ -457,7 +448,7 @@ object TelaHeranca: TTelaHeranca
         Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Arial'
-        Font.Style = []
+        Font.Style = [fsBold]
         Glyph.Data = {
           42040000424D4204000000000000420000002800000010000000100000000100
           20000300000000040000590000005900000000000000000000000000FF0000FF
@@ -501,22 +492,20 @@ object TelaHeranca: TTelaHeranca
       end
     end
     object pnlEditar: TPanel
-      Left = 305
+      Left = 361
       Top = 1
-      Width = 76
-      Height = 26
+      Width = 90
+      Height = 31
       Align = alLeft
       Color = cl3DLight
       ParentBackground = False
       TabOrder = 5
-      ExplicitLeft = 378
-      ExplicitTop = -4
-      ExplicitHeight = 31
+      ExplicitLeft = 333
       object btnEditar: TSpeedButton
         Left = 1
         Top = 1
-        Width = 74
-        Height = 24
+        Width = 88
+        Height = 29
         Align = alClient
         Caption = 'Editar'
         Flat = True
@@ -524,7 +513,7 @@ object TelaHeranca: TTelaHeranca
         Font.Color = clBlack
         Font.Height = -13
         Font.Name = 'Arial'
-        Font.Style = []
+        Font.Style = [fsBold]
         Glyph.Data = {
           42040000424D4204000000000000420000002800000010000000100000000100
           20000300000000040000700000007000000000000000000000000000FF0000FF
@@ -564,20 +553,18 @@ object TelaHeranca: TTelaHeranca
         ParentFont = False
         ExplicitLeft = 29
         ExplicitTop = -3
-        ExplicitHeight = 29
+        ExplicitWidth = 74
       end
     end
   end
   object pnlPrincipal: TPanel
     Left = 0
-    Top = 61
+    Top = 66
     Width = 648
-    Height = 166
+    Height = 156
     Align = alClient
     TabOrder = 3
-    ExplicitLeft = -69
-    ExplicitTop = -197
-    ExplicitWidth = 940
-    ExplicitHeight = 490
+    ExplicitTop = 61
+    ExplicitHeight = 166
   end
 end

@@ -27,6 +27,8 @@ type
     TdbSenha: TDBEdit;
     Label1: TLabel;
     TdbCódigo: TDBEdit;
+    DBcbbPermissao: TDBComboBox;
+    lblPermissao: TLabel;
     procedure FormCreate(Sender: TObject);
     procedure btnSalvarClick(Sender: TObject);
     procedure btnNovoClick(Sender: TObject);
@@ -41,6 +43,7 @@ type
     procedure AtivarCampos;
     procedure DesativarCampos;
     procedure resetarTela;
+    function verificarValoresEdits: boolean;
     { Private declarations }
   public
     { Public declarations }
@@ -121,18 +124,23 @@ end;
 procedure TfrmCadUsuarios.btnSalvarClick(Sender: TObject);
 begin
    inherited;
-   if(TdbCódigo.Text = '') then
+   if verificarValoresEdits then
    begin
-      zqryUsuarios.Post;
-      ShowMessage('Salvo com Sucesso !');
-      resetarTela;
-   end
-   else
-   begin
-      zqryUsuarios.UpdateRecord;
-      ShowMessage('Atualizado com sucesso !');
-      resetarTela;
+      if(TdbCódigo.Text = '') then
+      begin
+         zqryUsuarios.Post;
+         ShowMessage('Salvo com Sucesso !');
+         resetarTela;
+      end
+      else
+      begin
+         zqryUsuarios.UpdateRecord;
+         ShowMessage('Atualizado com sucesso !');
+         resetarTela;
+      end;
    end;
+
+
 end;
 
 procedure TfrmCadUsuarios.resetarTela;
@@ -169,6 +177,26 @@ begin
    end;
 end;
 
+function TfrmCadUsuarios.verificarValoresEdits: boolean;
+var
+   i : integer;
+begin
+   Result := true;
+   for i := 0 to ComponentCount -1 do
+   begin
+      if(Components[i] is TDBEdit ) then
+      begin
+         if (TDBEdit(Components[i]).Tag = 1) and (TDBEdit(Components[i]).Text = EmptyStr) then
+         begin
+            MessageDlg('Campos obrigatorios não preenchidos ' ,mtInformation,[mbOK],0);
+
+            Result := false;
+            exit;
+         end;
+      end;
+   end;
+end;
+
 procedure TfrmCadUsuarios.FormCreate(Sender: TObject);
 begin
    inherited;
@@ -187,28 +215,32 @@ end;
 
 procedure TfrmCadUsuarios.AtivarCampos;
 begin
-   TdbNome.Enabled     := true;
-   TdbEmail.Enabled    := true;
-   TdbTelefone.Enabled := true;
-   TdbSenha.Enabled    := true;
+   TdbNome.Enabled        := true;
+   TdbEmail.Enabled       := true;
+   TdbTelefone.Enabled    := true;
+   TdbSenha.Enabled       := true;
+   DBcbbPermissao.Enabled := true;
 
-   TdbNome.Color       := clWindow ;
-   TdbEmail.Color      := clWindow;
-   TdbTelefone.Color   := clWindow;
-   TdbSenha.Color      := clWindow;
+   DBcbbPermissao.Color   := clWindow ;
+   TdbNome.Color          := clWindow ;
+   TdbEmail.Color         := clWindow;
+   TdbTelefone.Color      := clWindow;
+   TdbSenha.Color         := clWindow;
 end;
 
 procedure TfrmCadUsuarios.DesativarCampos;
 begin
-   TdbNome.Enabled     := false;
-   TdbEmail.Enabled    := false;
-   TdbTelefone.Enabled := false;
-   TdbSenha.Enabled    := false;
+   TdbNome.Enabled        := false;
+   TdbEmail.Enabled       := false;
+   TdbTelefone.Enabled    := false;
+   TdbSenha.Enabled       := false;
+   DBcbbPermissao.Enabled := false;
 
-   TdbNome.Color       := cl3DLight ;
-   TdbEmail.Color      := cl3DLight;
-   TdbTelefone.Color   := cl3DLight;
-   TdbSenha.Color      := cl3DLight;
+   DBcbbPermissao.Color   := cl3DLight ;
+   TdbNome.Color          := cl3DLight ;
+   TdbEmail.Color         := cl3DLight;
+   TdbTelefone.Color      := cl3DLight;
+   TdbSenha.Color         := cl3DLight;
 end;
 
 end.

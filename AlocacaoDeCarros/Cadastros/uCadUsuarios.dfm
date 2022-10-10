@@ -1,6 +1,6 @@
 ﻿inherited frmCadUsuarios: TfrmCadUsuarios
   Caption = 'Cadastro'
-  ClientHeight = 213
+  ClientHeight = 216
   ClientWidth = 673
   Icon.Data = {
     0000010001002020000001002000A81000001600000028000000200000004000
@@ -139,19 +139,28 @@
     0009A8000015D400002BCA000053E50000A7F240024FFD1428BFFF4242FF}
   OnCreate = FormCreate
   ExplicitWidth = 679
-  ExplicitHeight = 242
+  ExplicitHeight = 245
   PixelsPerInch = 96
   TextHeight = 16
   inherited pnlRodape: TPanel
-    Top = 185
+    Top = 183
     Width = 673
-    ExplicitTop = 198
+    BevelOuter = bvNone
+    ParentBackground = False
+    ExplicitLeft = 1
+    ExplicitTop = 182
     ExplicitWidth = 673
     inherited pnlListagem: TPanel
-      Left = 596
+      Left = 583
+      Top = 0
+      Height = 33
+      BevelOuter = bvSpace
       Color = 16442595
-      ExplicitLeft = 596
+      ExplicitLeft = 583
+      ExplicitTop = 0
+      ExplicitHeight = 33
       inherited btnListagem: TSpeedButton
+        Height = 31
         OnClick = btnListagemClick
         ExplicitLeft = 1
         ExplicitTop = 4
@@ -160,8 +169,16 @@
       end
     end
     inherited pnlVoltar: TPanel
+      Left = 0
+      Top = 0
+      Height = 33
+      BevelOuter = bvSpace
       Color = 16442595
+      ExplicitLeft = 0
+      ExplicitTop = 0
+      ExplicitHeight = 33
       inherited btnVoltar: TSpeedButton
+        Height = 31
         Enabled = False
         OnClick = btnVoltarClick
       end
@@ -170,18 +187,22 @@
   inherited pnlTitulo: TPanel
     Width = 673
     Height = 27
+    BevelOuter = bvNone
+    Font.Color = clBlack
+    ParentBackground = False
+    ParentFont = False
     ExplicitWidth = 673
     ExplicitHeight = 27
     object lblCadusuarios: TLabel
-      Left = 245
-      Top = 0
-      Width = 184
-      Height = 25
+      Left = 234
+      Top = 2
+      Width = 204
+      Height = 24
       Caption = 'Cadastro de Usuarios'
       Font.Charset = ANSI_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -19
-      Font.Name = '@Malgun Gothic'
+      Font.Color = clBlack
+      Font.Height = -21
+      Font.Name = 'Arial'
       Font.Style = []
       ParentFont = False
     end
@@ -189,6 +210,8 @@
   inherited pnlBotoes: TPanel
     Top = 27
     Width = 673
+    ParentBackground = False
+    ExplicitTop = 27
     ExplicitWidth = 673
     inherited pnlNovo: TPanel
       Color = 16442595
@@ -207,7 +230,6 @@
     end
     inherited pnlCancelar: TPanel
       Color = 16442595
-      ExplicitLeft = 147
       inherited btnCancelar: TSpeedButton
         Enabled = False
         OnClick = btnCancelarClick
@@ -219,7 +241,6 @@
     end
     inherited pnlDeletar: TPanel
       Color = 16442595
-      ExplicitLeft = 223
       inherited btnDeletar: TSpeedButton
         Enabled = False
         OnClick = btnDeletarClick
@@ -229,13 +250,11 @@
       end
     end
     inherited pnlInformacoes: TPanel
-      Left = 596
+      Left = 582
       Color = 16442595
-      ExplicitLeft = 596
+      ExplicitLeft = 582
     end
     inherited pnlEditar: TPanel
-      ExplicitLeft = 305
-      ExplicitTop = 1
       inherited btnEditar: TSpeedButton
         Enabled = False
         OnClick = btnEditarClick
@@ -245,64 +264,76 @@
     end
   end
   inherited pnlPrincipal: TPanel
-    Top = 55
+    Top = 60
     Width = 673
-    Height = 130
-    ExplicitLeft = 0
-    ExplicitTop = 80
-    ExplicitWidth = 949
-    ExplicitHeight = 156
+    Height = 123
+    BevelOuter = bvNone
+    ParentBackground = False
+    ExplicitTop = 55
+    ExplicitWidth = 673
+    ExplicitHeight = 130
     object pgcCadCliente: TPageControl
-      Left = 1
-      Top = 1
-      Width = 671
-      Height = 128
-      ActivePage = tsListagem
+      Left = 0
+      Top = 0
+      Width = 673
+      Height = 123
+      ActivePage = tsCadastro
       Align = alClient
       TabOrder = 0
-      ExplicitHeight = 125
+      ExplicitLeft = -1
+      ExplicitTop = 4
+      ExplicitHeight = 120
       object tsCadastro: TTabSheet
         Caption = 'Cadastro'
         object lblNome: TLabel
-          Left = 82
+          Left = 79
           Top = -2
           Width = 34
           Height = 16
           Caption = 'Nome'
         end
         object lblTelefone: TLabel
-          Left = 474
-          Top = -2
+          Left = 357
+          Top = 42
           Width = 47
           Height = 16
           Caption = 'Telefone'
         end
         object lblEmail: TLabel
-          Left = 10
-          Top = 47
+          Left = 7
+          Top = 42
           Width = 37
           Height = 16
           Caption = 'E-mail'
         end
         object lblSenha: TLabel
-          Left = 474
-          Top = 47
+          Left = 460
+          Top = 0
           Width = 37
           Height = 16
           Caption = 'Senha'
         end
         object Label1: TLabel
-          Left = 10
+          Left = 7
           Top = -2
           Width = 40
           Height = 16
           Caption = 'C'#243'digo'
         end
+        object lblPermissao: TLabel
+          Left = 498
+          Top = 42
+          Width = 62
+          Height = 16
+          Caption = 'Permiss'#227'o'
+        end
         object TdbNome: TDBEdit
-          Left = 79
+          Tag = 1
+          Left = 76
           Top = 17
           Width = 378
           Height = 24
+          CharCase = ecUpperCase
           Color = cl3DLight
           DataField = 'usuario_nome'
           DataSource = dtsUsuarios
@@ -310,9 +341,10 @@
           TabOrder = 0
         end
         object TdbEmail: TDBEdit
-          Left = 8
-          Top = 64
-          Width = 456
+          Tag = 1
+          Left = 3
+          Top = 59
+          Width = 342
           Height = 24
           Color = cl3DLight
           DataField = 'usuario_email'
@@ -321,29 +353,32 @@
           TabOrder = 1
         end
         object TdbTelefone: TDBEdit
-          Left = 474
-          Top = 16
-          Width = 182
+          Tag = 1
+          Left = 357
+          Top = 59
+          Width = 131
           Height = 24
           Color = cl3DLight
           DataField = 'usuario_telefone'
           DataSource = dtsUsuarios
           Enabled = False
+          MaxLength = 8
           TabOrder = 2
         end
         object TdbSenha: TDBEdit
-          Left = 474
-          Top = 64
-          Width = 182
+          Left = 460
+          Top = 17
+          Width = 196
           Height = 24
           Color = cl3DLight
           DataField = 'usuario_senha'
           DataSource = dtsUsuarios
           Enabled = False
+          MaxLength = 8
           TabOrder = 3
         end
         object TdbCódigo: TDBEdit
-          Left = 8
+          Left = 5
           Top = 17
           Width = 62
           Height = 24
@@ -353,6 +388,22 @@
           Enabled = False
           TabOrder = 4
         end
+        object DBcbbPermissao: TDBComboBox
+          Tag = 1
+          Left = 496
+          Top = 59
+          Width = 160
+          Height = 22
+          Style = csOwnerDrawFixed
+          Color = cl3DLight
+          DataField = 'usuario_permissao'
+          DataSource = dtsUsuarios
+          Enabled = False
+          Items.Strings = (
+            'Usuario'
+            'ADM')
+          TabOrder = 5
+        end
       end
       object tsListagem: TTabSheet
         Caption = 'Listagem'
@@ -360,8 +411,8 @@
         object dbgrdListagemClientes: TDBGrid
           Left = 0
           Top = 0
-          Width = 663
-          Height = 97
+          Width = 665
+          Height = 92
           Align = alClient
           DataSource = dtsUsuarios
           TabOrder = 0
@@ -375,8 +426,8 @@
             item
               Expanded = False
               FieldName = 'usuario_id'
-              Title.Caption = 'C'#243'digo'
-              Width = 44
+              Title.Caption = 'ID'
+              Width = 32
               Visible = True
             end
             item
@@ -390,14 +441,21 @@
               Expanded = False
               FieldName = 'usuario_email'
               Title.Caption = 'E-mail'
-              Width = 316
+              Width = 301
               Visible = True
             end
             item
               Expanded = False
               FieldName = 'usuario_telefone'
               Title.Caption = 'Telefone'
-              Width = 123
+              Width = 94
+              Visible = True
+            end
+            item
+              Expanded = False
+              FieldName = 'usuario_permissao'
+              Title.Caption = 'Permiss'#227'o'
+              Width = 69
               Visible = True
             end>
         end
@@ -409,7 +467,7 @@
     SQL.Strings = (
       
         'SELECT usuario_id,usuario_nome,usuario_email,usuario_telefone,us' +
-        'uario_senha'
+        'uario_permissao,usuario_senha'
       ' FROM usuario ORDER BY usuario_id;'
       '')
     Params = <>
