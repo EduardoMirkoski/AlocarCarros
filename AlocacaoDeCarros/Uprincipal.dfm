@@ -72,7 +72,7 @@ object Form15: TForm15
     Left = 0
     Top = 38
     Width = 254
-    Height = 551
+    Height = 542
     Align = alLeft
     BevelOuter = bvNone
     BiDiMode = bdLeftToRight
@@ -115,7 +115,7 @@ object Form15: TForm15
     end
     object pnlSair: TPanel
       Left = 0
-      Top = 503
+      Top = 494
       Width = 254
       Height = 48
       Align = alBottom
@@ -130,7 +130,7 @@ object Form15: TForm15
         Width = 254
         Height = 48
         Align = alClient
-        Caption = 'Sair'
+        Caption = 'USUARIO LOGADO'
         Flat = True
         Font.Charset = DEFAULT_CHARSET
         Font.Color = clWhite
@@ -237,21 +237,49 @@ object Form15: TForm15
   end
   object pnlRodape: TPanel
     Left = 0
-    Top = 589
+    Top = 580
     Width = 1114
-    Height = 15
+    Height = 24
     Margins.Top = 0
     Align = alBottom
     BevelOuter = bvNone
     Color = 10053171
     ParentBackground = False
     TabOrder = 2
+    object lblhora: TLabel
+      AlignWithMargins = True
+      Left = 976
+      Top = 3
+      Width = 44
+      Height = 18
+      Align = alRight
+      Alignment = taCenter
+      Caption = 'HORA'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -16
+      Font.Name = 'Tahoma'
+      Font.Style = []
+      ParentFont = False
+      ExplicitLeft = 973
+      ExplicitTop = 2
+    end
+    object pnlCanto: TPanel
+      Left = 1023
+      Top = 0
+      Width = 91
+      Height = 24
+      Align = alRight
+      BevelOuter = bvNone
+      TabOrder = 0
+      ExplicitHeight = 20
+    end
   end
   object pgcAcoes: TPageControl
     Left = 254
     Top = 38
     Width = 860
-    Height = 551
+    Height = 542
     ActivePage = tsCadastros
     Align = alClient
     TabOrder = 3
@@ -318,155 +346,29 @@ object Form15: TForm15
           Width = 93
           Height = 38
           Align = alLeft
+          BevelOuter = bvNone
+          Color = 10053171
           ParentBackground = False
           TabOrder = 1
           object btnCadastroUsuarios: TSpeedButton
-            Left = 1
-            Top = 1
-            Width = 91
-            Height = 36
+            Left = 0
+            Top = 0
+            Width = 93
+            Height = 38
             Align = alClient
             Caption = 'Usuarios'
             Flat = True
             Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWindowText
+            Font.Color = clWhite
             Font.Height = -13
             Font.Name = 'Tahoma'
             Font.Style = []
             ParentFont = False
             OnClick = btnCadastrousuariosClick
+            ExplicitLeft = 1
+            ExplicitTop = 1
             ExplicitWidth = 88
-          end
-        end
-      end
-      object pnlEsquerdo: TPanel
-        Left = 598
-        Top = 120
-        Width = 254
-        Height = 403
-        Margins.Bottom = 0
-        Align = alRight
-        BevelOuter = bvNone
-        Color = 10053171
-        ParentBackground = False
-        TabOrder = 2
-        ExplicitLeft = 596
-        ExplicitTop = 124
-        object Panel1: TPanel
-          Left = 0
-          Top = 355
-          Width = 254
-          Height = 48
-          Align = alBottom
-          BevelOuter = bvSpace
-          Color = 10053171
-          ParentBackground = False
-          TabOrder = 0
-          ExplicitLeft = 14
-          ExplicitTop = -15
-          object SpeedButton1: TSpeedButton
-            Left = 1
-            Top = 1
-            Width = 252
-            Height = 46
-            Align = alClient
-            Caption = 'Cadastro de Usuarios'
-            Flat = True
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
-            Font.Height = -13
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            ExplicitLeft = 3
-            ExplicitTop = -42
-          end
-        end
-        object Panel4: TPanel
-          Left = 0
-          Top = 307
-          Width = 254
-          Height = 48
-          Align = alBottom
-          Color = clHighlight
-          ParentBackground = False
-          TabOrder = 1
-          ExplicitLeft = -1
-          ExplicitTop = -5
-          object SpeedButton4: TSpeedButton
-            Left = 1
-            Top = 1
-            Width = 252
-            Height = 46
-            Align = alClient
-            Caption = 'Cadastro de Usuarios'
-            Flat = True
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
-            Font.Height = -13
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            ExplicitLeft = 5
-            ExplicitTop = -43
-          end
-        end
-        object Panel6: TPanel
-          Left = 0
-          Top = 259
-          Width = 254
-          Height = 48
-          Align = alBottom
-          Color = 10053171
-          ParentBackground = False
-          TabOrder = 2
-          ExplicitTop = 56
-          object SpeedButton6: TSpeedButton
-            Left = 1
-            Top = 1
-            Width = 252
-            Height = 46
-            Align = alClient
-            Caption = 'Cadastro de Usuarios'
-            Flat = True
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
-            Font.Height = -13
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            ExplicitLeft = -4
-            ExplicitTop = 6
-            ExplicitWidth = 254
-            ExplicitHeight = 48
-          end
-        end
-        object Panel7: TPanel
-          Left = 0
-          Top = 211
-          Width = 254
-          Height = 48
-          Align = alBottom
-          Color = clHighlight
-          ParentBackground = False
-          TabOrder = 3
-          ExplicitTop = 165
-          object SpeedButton7: TSpeedButton
-            Left = 1
-            Top = 1
-            Width = 252
-            Height = 46
-            Align = alClient
-            Caption = 'Cadastro de Usuarios'
-            Flat = True
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clWhite
-            Font.Height = -13
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            ExplicitLeft = 9
-            ExplicitTop = 5
+            ExplicitHeight = 36
           end
         end
       end
@@ -475,5 +377,10 @@ object Form15: TForm15
       Caption = 'Alocar'
       ImageIndex = 1
     end
+  end
+  object tmrLoop: TTimer
+    OnTimer = tmrLoopTimer
+    Left = 1020
+    Top = 529
   end
 end

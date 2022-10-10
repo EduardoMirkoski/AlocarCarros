@@ -34,18 +34,13 @@ type
     pnlLatera: TPanel;
     pnlCadastroUsuarios: TPanel;
     btnCadastroUsuarios: TSpeedButton;
-    pnlEsquerdo: TPanel;
-    Panel1: TPanel;
-    SpeedButton1: TSpeedButton;
-    Panel4: TPanel;
-    SpeedButton4: TSpeedButton;
-    Panel6: TPanel;
-    SpeedButton6: TSpeedButton;
-    Panel7: TPanel;
-    SpeedButton7: TSpeedButton;
+    tmrLoop: TTimer;
+    lblhora: TLabel;
+    pnlCanto: TPanel;
     procedure imgMenuClick(Sender: TObject);
     procedure btnCadastrosClick(Sender: TObject);
     procedure btnCadastroUsuariosClick(Sender: TObject);
+    procedure tmrLoopTimer(Sender: TObject);
   private
     { Private declarations }
   public
@@ -86,6 +81,11 @@ begin
       pnlMenuLateral.Visible := true
    else
       pnlMenuLateral.Visible := false;
+end;
+
+procedure TForm15.tmrLoopTimer(Sender: TObject);
+begin
+   lblhora.Caption := TimeToStr(Time);
 end;
 
 end.
