@@ -57,11 +57,6 @@ implementation
 
 procedure TForm15.btnCadastrosClick(Sender: TObject);
 begin
-   if(pnlFlag.Visible = false)then
-      pnlFlag.Visible := true
-   else
-      pnlFlag.Visible := false;
-
    if(pgcAcoes.Visible = false) then
    begin
       pgcAcoes.Visible := true;

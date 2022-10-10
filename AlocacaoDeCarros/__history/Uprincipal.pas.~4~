@@ -37,7 +37,6 @@ type
     tmrLoop: TTimer;
     lblhora: TLabel;
     pnlCanto: TPanel;
-    pnlFlag: TPanel;
     procedure imgMenuClick(Sender: TObject);
     procedure btnCadastrosClick(Sender: TObject);
     procedure btnCadastroUsuariosClick(Sender: TObject);
@@ -57,11 +56,6 @@ implementation
 
 procedure TForm15.btnCadastrosClick(Sender: TObject);
 begin
-   if(pnlFlag.Visible = false)then
-      pnlFlag.Visible := true
-   else
-      pnlFlag.Visible := false;
-
    if(pgcAcoes.Visible = false) then
    begin
       pgcAcoes.Visible := true;

@@ -61,7 +61,6 @@ begin
       pnlFlag.Visible := true
    else
       pnlFlag.Visible := false;
-
    if(pgcAcoes.Visible = false) then
    begin
       pgcAcoes.Visible := true;

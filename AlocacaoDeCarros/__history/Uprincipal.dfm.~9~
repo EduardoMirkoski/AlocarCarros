@@ -53,7 +53,7 @@ object Form15: TForm15
     end
     object lblTitulo: TLabel
       Left = 822
-      Top = 7
+      Top = 4
       Width = 284
       Height = 23
       Anchors = [akTop, akRight]
@@ -64,6 +64,7 @@ object Form15: TForm15
       Font.Name = 'Verdana'
       Font.Style = []
       ParentFont = False
+      ExplicitLeft = 774
     end
   end
   object pnlMenuLateral: TPanel
@@ -105,7 +106,10 @@ object Form15: TForm15
         Font.Style = []
         ParentFont = False
         OnClick = btnCadastrosClick
-        ExplicitTop = -2
+        ExplicitLeft = 65
+        ExplicitTop = 0
+        ExplicitWidth = 187
+        ExplicitHeight = 42
       end
       object pnlFlag: TPanel
         Left = 2
@@ -114,7 +118,6 @@ object Form15: TForm15
         Height = 44
         Align = alLeft
         BevelOuter = bvNone
-        Color = clInactiveCaption
         ParentBackground = False
         TabOrder = 0
         Visible = False
@@ -297,36 +300,33 @@ object Form15: TForm15
         Left = 0
         Top = 0
         Width = 852
-        Height = 25
+        Height = 72
         Align = alTop
-        Color = clInactiveCaption
-        ParentBackground = False
         TabOrder = 0
         object lblCadastros: TLabel
-          Left = 1
-          Top = 1
-          Width = 850
-          Height = 23
+          AlignWithMargins = True
+          Left = 4
+          Top = 4
+          Width = 844
+          Height = 64
           Align = alClient
           Alignment = taCenter
           Caption = 'Cadastros'
-          Font.Charset = ANSI_CHARSET
+          Font.Charset = DEFAULT_CHARSET
           Font.Color = clWindowText
-          Font.Height = -21
-          Font.Name = 'Arial'
+          Font.Height = -29
+          Font.Name = 'Tahoma'
           Font.Style = []
           ParentFont = False
-          ExplicitLeft = 4
-          ExplicitTop = 3
-          ExplicitWidth = 844
-          ExplicitHeight = 17
+          ExplicitWidth = 125
+          ExplicitHeight = 35
         end
       end
       object nplTiposCadastros: TPanel
         Left = 0
-        Top = 25
+        Top = 72
         Width = 852
-        Height = 49
+        Height = 48
         Margins.Left = 0
         Align = alTop
         BevelOuter = bvNone
@@ -334,34 +334,31 @@ object Form15: TForm15
         Color = clHighlight
         ParentBackground = False
         TabOrder = 1
-        ExplicitTop = 72
         object pnlLatera: TPanel
           Left = 2
           Top = 2
           Width = 267
-          Height = 45
+          Height = 44
           Align = alLeft
           BevelOuter = bvNone
           TabOrder = 0
-          ExplicitHeight = 44
         end
         object pnlCadastroUsuarios: TPanel
           AlignWithMargins = True
           Left = 272
           Top = 5
           Width = 93
-          Height = 39
+          Height = 38
           Align = alLeft
           BevelOuter = bvNone
           Color = 10053171
           ParentBackground = False
           TabOrder = 1
-          ExplicitHeight = 38
           object btnCadastroUsuarios: TSpeedButton
             Left = 0
             Top = 0
             Width = 93
-            Height = 39
+            Height = 38
             Align = alClient
             Caption = 'Usuarios'
             Flat = True

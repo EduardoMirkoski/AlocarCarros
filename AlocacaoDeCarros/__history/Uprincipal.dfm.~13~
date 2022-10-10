@@ -114,7 +114,6 @@ object Form15: TForm15
         Height = 44
         Align = alLeft
         BevelOuter = bvNone
-        Color = clInactiveCaption
         ParentBackground = False
         TabOrder = 0
         Visible = False
@@ -297,34 +296,31 @@ object Form15: TForm15
         Left = 0
         Top = 0
         Width = 852
-        Height = 25
+        Height = 72
         Align = alTop
-        Color = clInactiveCaption
-        ParentBackground = False
         TabOrder = 0
         object lblCadastros: TLabel
-          Left = 1
-          Top = 1
-          Width = 850
-          Height = 23
+          AlignWithMargins = True
+          Left = 4
+          Top = 4
+          Width = 844
+          Height = 64
           Align = alClient
           Alignment = taCenter
           Caption = 'Cadastros'
           Font.Charset = ANSI_CHARSET
           Font.Color = clWindowText
-          Font.Height = -21
+          Font.Height = -32
           Font.Name = 'Arial'
           Font.Style = []
           ParentFont = False
-          ExplicitLeft = 4
-          ExplicitTop = 3
-          ExplicitWidth = 844
-          ExplicitHeight = 17
+          ExplicitWidth = 143
+          ExplicitHeight = 36
         end
       end
       object nplTiposCadastros: TPanel
         Left = 0
-        Top = 25
+        Top = 72
         Width = 852
         Height = 49
         Margins.Left = 0
@@ -334,7 +330,6 @@ object Form15: TForm15
         Color = clHighlight
         ParentBackground = False
         TabOrder = 1
-        ExplicitTop = 72
         object pnlLatera: TPanel
           Left = 2
           Top = 2

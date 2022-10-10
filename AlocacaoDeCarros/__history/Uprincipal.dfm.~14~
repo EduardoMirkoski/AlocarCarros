@@ -114,7 +114,6 @@ object Form15: TForm15
         Height = 44
         Align = alLeft
         BevelOuter = bvNone
-        Color = clInactiveCaption
         ParentBackground = False
         TabOrder = 0
         Visible = False
@@ -299,7 +298,7 @@ object Form15: TForm15
         Width = 852
         Height = 25
         Align = alTop
-        Color = clInactiveCaption
+        Color = clSilver
         ParentBackground = False
         TabOrder = 0
         object lblCadastros: TLabel
